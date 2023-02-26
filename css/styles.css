@@ -113,3 +113,61 @@ img{
     justify-content: center;
     align-items: center;
 }
+
+
+.merge-sort{
+    width: 70%;
+    height: 50%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background: #385a6420;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.2px);
+    -webkit-backdrop-filter: blur(2.2px);
+}
+
+.flex{
+    display: flex;
+}
+
+.hide{
+    display: none;
+}
+
+.merge-all{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+.merge-all > h3 {
+    font-family: fontBold;
+    color: #1B2E35;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.merge-all > p {
+    color: #385A64;
+    font-family: font;
+    font-size: 20px;
+}
+
+.merge-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.merge-button > button{
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #385A64;
+    color: white;
+    font-size: 1.2rem;
+    font-family: font;
+}
