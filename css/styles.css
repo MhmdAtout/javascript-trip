@@ -186,7 +186,7 @@ img{
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    background: #385a6420;
+    background: #385a6410;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2.2px);
@@ -214,3 +214,9 @@ img{
     margin-bottom: 20px;
 }
 
+.prime-result{
+    color: #385A64;
+    font-family: font;
+    font-size: 20px;
+    text-align: center;
+}
