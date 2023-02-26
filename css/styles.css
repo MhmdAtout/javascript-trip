@@ -11,6 +11,11 @@ img{
     height: 100%;
 }
 
+@font-face {
+    font-family: font;
+    src: url('/assets/fonts/TheMix-6-SemiBoldCaps.otf');
+}
+
 .page{
     width: 100vw;
     height: 100vh;
