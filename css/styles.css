@@ -15,6 +15,10 @@ img{
     font-family: font;
     src: url('/assets/fonts/TheMix-6-SemiBoldCaps.otf');
 }
+@font-face {
+    font-family: fontBold;
+    src: url("/assets/fonts/TheMix-9-BlackCaps.otf");
+}
 
 .page{
     width: 100vw;
