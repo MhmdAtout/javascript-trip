@@ -58,3 +58,9 @@ img{
     color: #385A64;
     font-family: fontBold;
 }
+
+.second{
+    display: flex;
+    justify-content: space-between;
+    margin: 10% 0 2%;
+}
