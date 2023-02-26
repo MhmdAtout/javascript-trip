@@ -64,3 +64,9 @@ img{
     justify-content: space-between;
     margin: 10% 0 2%;
 }
+.second > input{
+    width: 48%;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 5px;
+}
