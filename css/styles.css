@@ -39,7 +39,7 @@ img{
 
 .register-form{
     width: 30%;
-    height: 70%;
+    height: 65%;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -50,4 +50,11 @@ img{
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2.2px);
     -webkit-backdrop-filter: blur(2.2px);
+}
+
+.first{
+    text-align: center;
+    font-size: 20px;
+    color: #385A64;
+    font-family: fontBold;
 }
