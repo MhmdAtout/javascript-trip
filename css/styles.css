@@ -3,6 +3,7 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 img{
@@ -22,7 +23,7 @@ img{
 
 .wrapper{
     width: 100vw;
-    height: 100vh;
+    height: 101vh;
     overflow-x: hidden;
     overflow-y: scroll;
     background-image: url('/assets/images/mountain-background.svg');
@@ -45,10 +46,11 @@ img{
     font-size: 1.2rem;
     font-family: font;
     margin: 10px 0;
+    cursor: pointer;
 }
 
 .hide{
-    display: hide;
+    display: none;
 }
 
 .flex{
@@ -90,12 +92,28 @@ img{
     font-family: fontBold;
     margin-bottom: 10px;
 }
+.p{
+    text-align: center;
+    font-size: 20px;
+    color: #385A64;
+    font-family: font;
+    margin-bottom: 10px;
+}
+.text-center{
+    text-align: center;
+}
 
 .page{
     height: 100vh;
     width: 100vw;
 }
+.half-page{
+    width: 40%;
+    height: 50%;
+    padding: 50px;
+}
 
+/* Registration Form */
 .register-form{
     width: 30%;
     height: 65%;
@@ -104,86 +122,33 @@ img{
 .register-form > div {
     width: 80%;
 }
+/*  */
 
-
-.merge-sort-page{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
+/* Merge Sort */
 .merge-sort{
     width: 70%;
     height: 50%;
     padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
 }
 
-.flex{
-    display: flex;
-}
-
-.hide{
-    display: none;
-}
-
-.merge-all{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.merge-result{
     margin-bottom: 40px;
     padding: 20px;
 }
-.merge-all > h3 {
+.merge-result > h3 {
     font-family: fontBold;
     color: #1B2E35;
     font-size: 35px;
     margin-bottom: 10px;
 }
-.merge-all > p {
+.merge-result > p {
     color: #385A64;
     font-family: font;
-    font-size: 20px;
+    font-size: 40px;
 }
+/*  */
 
-.merge-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.merge-button > button{
-    padding: 15px 30px;
-    border-radius: 30px;
-    background-color: #385A64;
-    color: white;
-    font-size: 1.2rem;
-    font-family: font;
-}
-
-.page3{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.page3-blur{
-    width: 40%;
-    height: 50%;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-
+/* Palindrome */
 .palindrome-text{
     flex-direction: column;
     justify-content: center;
@@ -192,49 +157,33 @@ img{
     padding: 20px;
 }
 
-.palindrome-input{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Course Form */
+.course-form {
+    width: 50%;
+    height: 60%;
 }
-.palindrome-input > input{
-    width: 400px;
-    height: 40px;
+.course-form-info{
+    width: 70%;
+}
+.course-form-info > div {
+    width: 50%;
+}
+.course-info > h3 {
+   font-size: 40px; 
+}
+
+.scroll-top{
+    position: relative;
+    align-self: center;
+    margin: 0px 45%;
+    bottom: 100px;
+}
+
+.course-form-text{
+    width: 30%;
+    height: 60%;
     padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.prime-result{
-    color: #385A64;
-    font-family: font;
-    font-size: 20px;
-    text-align: center;
-}
-
-.page4{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.page4-blur{
-    width: 80%;
-    height: 70%;
-    padding: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-}
-
-.page5{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    font-family: fontbold;
+    color: #1B2E35;
+    line-height: 35px;
 }
