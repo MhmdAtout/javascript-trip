@@ -23,7 +23,7 @@ img{
 
 .wrapper{
     width: 100vw;
-    height: 101vh;
+    height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
     background-image: url('/assets/images/mountain-background.svg');
