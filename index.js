@@ -192,3 +192,23 @@ reverse_btn.addEventListener('click', () => {
     var reversed = reverse(reverse_input.value)
     reverse_result.innerText = reversed
 })
+
+// ___________________________________________ Question 7
+
+var shuffle_btn = document.getElementById('shuffle_btn');
+var shuffle_result = document.getElementById('shuffle_result');
+
+
+shuffle_btn.addEventListener('click', () => {
+    var shuffle_input = document.getElementById('shuffle_input').value;
+    let new_word
+
+    for (let i = 0; i < shuffle_input.length; i++){
+        if(shuffle_input[i] === "i" || shuffle_input[i] === "o" || shuffle_input[i] === "u" || shuffle_input[i] === "a" || shuffle_input[i] === "e"){
+            new_word = shuffle_input.slice(0, i)
+            shuffle_input = shuffle_input.slice(i, shuffle_input.length +1)
+            break;
+        }}
+
+    shuffle_result.innerText = `${shuffle_input}${new_word}ay`;  
+})
