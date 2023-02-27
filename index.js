@@ -174,3 +174,21 @@ course_btn.addEventListener('click', () => {
     course_value.innerText = `${new_student.course}`;
     instructor_value.innerText = `${new_student.intructor}`;
 })
+
+// ___________________________________________ Question 6
+function reverse (string) {
+    var reversed_string = ""
+    for (var i = string.length -1; i >= 0; i-- ){
+        reversed_string += string[i]
+    }
+    return reversed_string;
+}
+
+var reverse_input = document.getElementById('reverse_input');
+var reverse_btn = document.getElementById('reverse_btn');
+var reverse_result = document.getElementById('reverse_result');
+
+reverse_btn.addEventListener('click', () => {
+    var reversed = reverse(reverse_input.value)
+    reverse_result.innerText = reversed
+})
