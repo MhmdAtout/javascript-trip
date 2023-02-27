@@ -267,3 +267,10 @@ wrapper.addEventListener('scroll', () => {
         scroll = true
     }
 })
+
+// ____________________________________________ Question 12
+const end_btn = document.getElementById('end_btn');
+
+end_btn.addEventListener('click', () => {
+    wrapper.scrollTop = 0;
+})
