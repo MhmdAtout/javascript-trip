@@ -8,82 +8,139 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="page">
+    <div class="wrapper" id="wrapper">
 
-        <div class="register-form-page">
-            <div class="register-form">
-                <div class="first">
-                    <h1>Registeration From</h1>
+        <div class="page flex jc-center ai-center">
+            <div class="register-form flex column jc-se ai-center glass">
+                <div class="title">
+                    <h1>Registeration Form</h1>
                 </div>
-                <div class="second">
-                    <input type="text" class="second-input" id="" placeholder="First Name">
-                    <input type="text" class="second-input" id="" placeholder="Last Name">
-                </div>
-                <div class="third">
-                    <input type="email" placeholder="Email">
+                <div class="flex column jc-center ai-center">
+                    <input type="text" id="first_name" class="input" placeholder="First Name">
+                    <input type="text" id="last_name" class="input" placeholder="Last Name">
+                    <input type="email" class="input" id="signup_email" placeholder="Email">
                     <span id="email-error"></span>
-                    <input type="password" placeholder="Enter Your Password">
+                    <input type="password" class="input" id="signup_password" placeholder="Password">
                     <span id="password-error"></span>
-                    <input type="password" placeholder="Renter Your Password">
-                    <span id="re-password-error"></span>
                 </div>
-                <div class="fourth">
-                    <button class="submit-btn" id="submit-btn">Submit</button>
+                <div class="flex jc-center ai-center">
+                    <button class="btn" id="submit_btn">Submit</button>
+                </div>
+                <div class="flex jc-center ai-center">
+                    <h1 class="p" id="registration_result"></h1>
                 </div>
             </div>
         </div>
 
-        <div class="merge-sort-page">
-            <div class="merge-sort">
-                <div class="hide merge-all">
-                    <h3>It would be much better if you entered them like this</h3>
+        <div class="page flex jc-se ai-center">
+            <div id="course_form_text" class="course-form-text hide jc-center ai-center glass" >
+                <h2 id="reg_text" class="reg_text"></h2>
+            </div>
+            <div class="course-form flex column jc-se ai-center glass">
+                <div class="title">
+                    <h1>Registeration Form</h1>
+                </div>
+                <div class="course-form-info flex jc-se ai-center">
+                    <div class="course-inputs flex column jc-se ai-center">
+                        <input type="text" class="input" id="student_name" placeholder="Full Name">
+                        <input type="text" class="input" id="student_major" placeholder="Major">
+                        <input type="text" class="input" id="course_name" placeholder="Course Name">
+                        <input type="text" class="input" id="intructor_name" placeholder="Intructor Name">
+                        <div>
+                            <button class="btn" id="course_btn">Register</button>
+                        </div>
+                    </div>
+                    <div class="course-info flex column jc-center ai-center">
+                        <h3 class="title">Student Info</h3>
+                        <p class="title" >Name: <span class="p" id="name_value"></span></p>
+                        <p class="title">Major: <span class="p" id="major_value"></span></p>
+                        <p class="title">Course: <span class="p" id="course_value"></span></p>
+                        <p class="title">Instructor Name: <span class="p" id="instructor_value"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page flex jc-center ai-center">
+            <div class="merge-sort glass flex column jc-center ai-center">
+                <div class="title">
+                    <h1>Merge Sort</h1>
+                </div>
+                <div id="merge_result" class="merge-result text-center hide column">
+                    <h3>It would look much better if you entered them sorted</h3>
                     <p id="sorted_list"></p>
                 </div>
-                <div class="merge-button">
-                    <button>Sort Numbers</button>
+                <div class="flex jc-center ai-center">
+                    <button class="btn" id="merge_sort_btn">Sort Numbers</button>
                 </div>
             </div>
         </div>
 
-        <div class="page3">
-            <div class="page3-blur">
-                <div class="palindrome-input">
-                    <input type="text" name="" id="" placeholder="Enter a word">
+        <div class="page flex jc-se ai-center">
+            <div class="half-page glass flex column jc-se ai-center">
+                <div class="title">
+                    <h1>Palindrome</h1>
                 </div>
-                <div class="palindrome-text">
-                    <div class="palindrome-input">
-                        <h3></h3>
+                <div class="palindrome-input flex jc-center ai-center">
+                    <input type="text" class="input" id="to_check" placeholder="Enter a word">
+                </div>
+                <div class="">
+                    <div class="p">
+                        <h3 id="input_word"></h3>
                     </div>
-                    <div class="palindrome-result">
-                        <h1></h1>
+                    <div class="p">
+                        <h1 id="result"></h1>
                     </div>
                 </div>
-                <div class="merge-button">
-                    <button>Check For Palindrome</button>
+                <div class="">
+                    <button class="btn" id="check_btn">Check For Palindrome</button>
                 </div>
             </div>
 
-            <div class="page3-blur">
-                <div class="palindrome-input">
-                    <input type="text" placeholder="Enter year of birth">
+            <div class="half-page glass flex column jc-se ai-center">
+                <div class="title">
+                    <h1>Prime Number</h1>
                 </div>
-                <div class="prime-result">
-                    <h3></h3>
+                <div class="flex jc-center ai-center">
+                    <input type="text" class="input" id="year_input" placeholder="Year of birth">
                 </div>
-                <div class="merge-button">
-                    <button>Check if Prime</button>
+                <div class="">
+                    <h3 class="p" id="prime_result"></h3>
+                </div>
+                <div>
+                    <button class="btn" id="check_prime_btn">Check if Prime</button>
                 </div>
             </div>
         </div>
 
-        <div class="page4">
-            <div class="page4-blur">
-                
+        <div class="page flex jc-se ai-center">
+            <div class="half-page glass flex column jc-se ai-center">
+                <input type="text" class="input" id="reverse_input" placeholder="Enter a string to reverse it">
+                <p class="p" id="reverse_result"></p>
+                <button class="btn" id="reverse_btn">Reverse</button>
             </div>
-            <div class="page4-blur">
-                
+            <div class="half-page glass flex column jc-se ai-center">
+                <input type="text" class="input" id="shuffle_input" placeholder="enter a string to shuffle it">
+                <p class="p" id="shuffle_result"></p>
+                <button class="btn" id="shuffle_btn">Shuffle</button>
             </div>
         </div>
+
+        <div class="page flex jc-se ai-center">
+            <div class="half-page glass flex column jc-se ai-center">
+                <p class="p" id="ip_adress"></p>
+                <p class="p" id="ip_sum"></p>
+                <button class="btn" id="get_ip_btn">Get my IP</button>
+            </div>
+            <div class="half-page glass flex column jc-se ai-center">
+                <p class="p" id="country"></p>
+                <p class="p" id="region"></p>
+                <p class="p" id="city"></p>
+                <button class="btn" id="get_location">Get my Location</button>
+            </div>
+        </div>
+        <button class="btn scroll-top" id="end_btn">Scroll Up</button>
 
     </div>
     <script src="./index.js"></script>
