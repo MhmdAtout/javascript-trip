@@ -212,3 +212,27 @@ shuffle_btn.addEventListener('click', () => {
 
     shuffle_result.innerText = `${shuffle_input}${new_word}ay`;  
 })
+
+// ___________________________________________ Question 9
+var get_ip_btn = document.getElementById('get_ip_btn');
+var ip_adress = document.getElementById('ip_adress');
+var ip_sum = document.getElementById('ip_sum');
+
+
+get_ip_btn.addEventListener('click', () => {
+    fetch('http://ip-api.com/json/?fields=61439')
+    .then((res) => res.json())
+    .then((data) => {
+        ip_adress.innerText = data.query
+        
+        var ip_number = data.query.replaceAll(".", ""); 
+        let sum = 0;
+
+        for (var i = 0; i < ip_number.length; i++){
+            if(ip_number[i] % 2 == 0){
+                sum += parseInt(ip_number[i]);
+            }
+        }
+        ip_sum.innerText = `The sum of even numbers in your IP Address = ${sum}`
+    });
+})
