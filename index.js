@@ -117,3 +117,30 @@ function check(words) {
     }
   }
 }
+
+// ___________________________________________ Question 4
+function isPrime(number){
+    if (number < 2) {
+        return `${number} is not a prime number`;
+    }
+    
+    for (let i = 2; i < number; i++) {
+        if (number % i === 0) {
+            return `You are ${number} years old, it is not a prime number`;
+        }
+    }
+
+    return `You are ${number} years old, it is a prime number`;
+}
+
+var check_prime_btn = document.getElementById('check_prime_btn');
+var prime_result = document.getElementById('prime_result');
+
+check_prime_btn.addEventListener('click', () => {
+    var year_input = document.getElementById('year_input');
+    var date = new Date();
+    var current_year = date.getFullYear();
+    var age =  current_year - year_input.value;
+    var function_result = isPrime(age); 
+    prime_result.innerText = function_result;
+})
