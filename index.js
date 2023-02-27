@@ -144,3 +144,33 @@ check_prime_btn.addEventListener('click', () => {
     var function_result = isPrime(age); 
     prime_result.innerText = function_result;
 })
+
+// ___________________________________________ Question 5
+var student_name = document.getElementById('student_name');
+var student_major = document.getElementById('student_major');
+var course_name = document.getElementById('course_name');
+var intructor_name = document.getElementById('intructor_name');
+
+var name_value = document.getElementById('name_value');
+var major_value = document.getElementById('major_value');
+var course_value = document.getElementById('course_value');
+var instructor_value = document.getElementById('instructor_value');
+
+var course_btn = document.getElementById('course_btn');
+
+class Courses{
+    constructor(name, major, course, intructor){
+        this.name = name;
+        this.major = major;
+        this.course = course;
+        this.intructor = intructor;
+    }
+}
+
+course_btn.addEventListener('click', () => {
+    var new_student = new Courses(student_name.value, student_major.value, course_name.value, intructor_name.value);
+    name_value.innerText = `${new_student.name}`;
+    major_value.innerText = `${new_student.major}`;
+    course_value.innerText = `${new_student.course}`;
+    instructor_value.innerText = `${new_student.intructor}`;
+})
