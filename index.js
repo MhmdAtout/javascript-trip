@@ -36,3 +36,57 @@ submit_btn.addEventListener('click', () => {
         alert("Please make sure \n Your password should be a minimuim of 8 characters and includes a special character, numbers, small and capital letters \n Email can only include '.'")
     }
 })
+
+// ___________________________________________ Question 2
+function merge(arr1, arr2) {
+    let i = 0;
+    let j = 0;
+    let results = [];
+    while(i < arr1.length && j < arr2.length) {
+     if (arr2[j] > arr1[i]) {
+      results.push(arr1[i]);
+      i++;  
+     }else {
+      results.push(arr2[j])
+      j++
+     }
+    }
+    while(i < arr1.length){
+     results.push(arr1[i]);
+     i++;
+    }
+    while(j < arr2.length){
+     results.push(arr2[j]);
+     j++;
+    }
+    return results
+   }
+
+function mergeSort(arr){
+    if (arr.length <= 1) return arr;
+    
+    let mid = Math.floor(arr.length/2);
+    let left = mergeSort(arr.slice(0, mid));
+    let right = mergeSort(arr.slice(mid));
+    return merge(left, right);
+   }
+
+
+var merge_sort_btn = document.getElementById('merge_sort_btn');
+var sorted_list = document.getElementById('sorted_list');
+var merge_result = document.getElementById('merge_result');
+
+merge_sort_btn.addEventListener('click', () => {
+    var list = prompt("Enter 10 numbers separated with spaces only")
+    var splitted = list.split(' ');
+    var parsed = [];
+    splitted.forEach(element => {
+        parsed.push(parseInt(element)) 
+    });
+    var sorted = mergeSort(parsed);
+    var string = sorted.join(" ");
+    sorted_list.innerText = string;
+
+    merge_result.classList.remove('hide');
+    merge_result.classList.add('flex');
+})
