@@ -90,3 +90,30 @@ merge_sort_btn.addEventListener('click', () => {
     merge_result.classList.remove('hide');
     merge_result.classList.add('flex');
 })
+
+// ___________________________________________ Question 3
+const to_check = document.getElementById("to_check");
+const check_btn = document.getElementById("check_btn");
+var input_word = document.getElementById('input_word');
+var result = document.getElementById('result');
+
+check_btn.addEventListener("click", function () {
+  check(to_check.value);
+});
+function check(words) {
+  for (let i = 0; i < words.length; i++) {
+    let j = words.length - 1 - i;
+    if (words[i] == words[j]) {
+      let portion = words.slice(i + 1, j - 1);
+      check(portion);
+      if ((portion.length = 1)) {
+        input_word.innerHTML = to_check.value
+        result.innerHTML = "WOW! Its a Palindrome :)";
+      }
+    } else {
+        input_word.innerHTML = to_check.value
+        result.innerHTML = "OOPPSS! Not a Palindrom :(";
+      break;
+    }
+  }
+}
