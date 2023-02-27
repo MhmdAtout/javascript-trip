@@ -236,3 +236,19 @@ get_ip_btn.addEventListener('click', () => {
         ip_sum.innerText = `The sum of even numbers in your IP Address = ${sum}`
     });
 })
+
+// ___________________________________________ Question 10
+var get_location = document.getElementById('get_location');
+var country = document.getElementById('country');
+var region = document.getElementById('region');
+var city = document.getElementById('city');
+
+get_location.addEventListener('click', () => {
+    fetch('http://ip-api.com/json/?fields=61439')
+    .then((res) => res.json())
+    .then((data) => {
+        country.innerText = `Country: ${data.country}`
+        region.innerText = `Region: ${data.regionName}`
+        city.innerText = `City: ${data.city}`
+    });
+})
